@@ -1,7 +1,7 @@
 {
     "name": "power",
     "version": "0.2.3",
-    "description": "Stromverbrauch anpassen. Calliope mini 3.",
+    "description": "Stromverbrauch anpassen. Nur für den Calliope mini 3.",
     "dependencies": {
         "core": "*"
     },
