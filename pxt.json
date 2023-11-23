@@ -1,7 +1,7 @@
 {
     "name": "power",
     "version": "0.2.3",
-    "description": "Power saving. micro:bit (V2) only.",
+    "description": "Stromverbrauch anpassen. Calliope mini 3.",
     "dependencies": {
         "core": "*"
     },
@@ -17,10 +17,10 @@
     "public": true,
     "targetVersions": {
         "target": "4.0.11",
-        "targetId": "microbit"
+        "targetId": "calliopemini"
     },
     "supportedTargets": [
-        "microbit"
+        "calliopemini"
     ],
     "preferredEditor": "blocksprj"
 }

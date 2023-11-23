@@ -5,31 +5,31 @@
  */
 
 const enum FullPowerSource {
-    //% block="button A"
+    //% block="Knopf A"
     A = DAL.MICROBIT_ID_BUTTON_A, // 1
-    //% block="button B"
+    //% block="Knopf B"
     B = DAL.MICROBIT_ID_BUTTON_B, // 2
-    //% block="pin P0"
+    //% block="Pin P0"
     P0 = DAL.MICROBIT_ID_IO_P0, // 100
-    //% block="pin P1"
+    //% block="Pin P1"
     P1 = DAL.MICROBIT_ID_IO_P1, // 101
-    //% block="pin P2"
+    //% block="Pin P2"
     P2 = DAL.MICROBIT_ID_IO_P2 // 102
 }
 
 
 const enum LowPowerMode {
-    //% block="continue"
+    //% block="weiterlaufen"
     Continue = 0,
-    //% block="wait"
+    //% block="warten"
     Wait = 1
 }
 
 
 const enum LowPowerEnable {
-    //% block="prevent"
+    //% block="verhindern"
     Prevent = 0,
-    //% block="allow"
+    //% block="erlauben"
     Allow = 1
 }
 
@@ -46,7 +46,7 @@ namespace power {
 //% help=power/low-power-request
 //% group="micro:bit (V2)"
 //% weight=700
-//% block="request low power||and $mode"
+//% block="niedrigen Verbauch anfordern||und $mode"
 //% parts="v2"
 //% shim=power::lowPowerRequest
 export function lowPowerRequest(mode?: LowPowerMode): void {
@@ -61,7 +61,7 @@ export function lowPowerRequest(mode?: LowPowerMode): void {
 //% group="micro:bit (V2)"
 //% weight=600
 //% interval.shadow=longTimePicker
-//% block="request low power for $interval ms"
+//% block="niedrigen Verbauch für $interval ms anfordern"
 //% parts="v2"
 //% shim=power::lowPowerPause
 export function lowPowerPause(interval: number): void {
@@ -75,7 +75,7 @@ export function lowPowerPause(interval: number): void {
     */
 //% help=power/low-power-enable
 //% weight=500
-//% block="low power %enable"
+//% block="niedrigen Verbrauch %enable"
 //% parts="v2"
 //% shim=power::lowPowerEnable
 export function lowPowerEnable(enable: LowPowerEnable): void {
@@ -102,7 +102,7 @@ export function lowPowerIsEnabled(): boolean {
 //% blockAllowMultiple=1
 //% interval.shadow=longTimePicker
 //% afterOnStart=true
-//% block="full power every $interval ms"
+//% block="vollen Verbrauch alle $interval ms"
 //% parts="v2"
 //% shim=power::fullPowerEvery
 export function fullPowerEvery(interval: number, code: () => void): void {
@@ -138,7 +138,7 @@ export function fullPowerSourceIsEnabled(source: FullPowerSource): boolean {
 //% help=power/full-power-on
 //% group="micro:bit (V2)"
 //% weight=900
-//% block="full power on %source"
+//% block="vollen Verbrauch mit %source aktivieren"
 //% parts="v2"
 //% shim=power::fullPowerOn
 export function fullPowerOn(source: FullPowerSource): void {

@@ -19,29 +19,29 @@
 
 
 enum class FullPowerSource {
-    //% block="button A"
+    //% block="Knopf A"
     A  = MICROBIT_ID_BUTTON_A,
-    //% block="button B"
+    //% block="Knopf B"
     B  = MICROBIT_ID_BUTTON_B,
-    //% block="pin P0"
+    //% block="Pin P0"
     P0 = MICROBIT_ID_IO_P0,
-    //% block="pin P1"
+    //% block="Pin P1"
     P1 = MICROBIT_ID_IO_P1,
-    //% block="pin P2"
+    //% block="Pin P2"
     P2 = MICROBIT_ID_IO_P2
 };
 
 enum class LowPowerMode {
-    //% block="continue"
+    //% block="weiterlaufen"
     Continue = 0,
-    //% block="wait"
+    //% block="warten"
     Wait = 1
 };
 
 enum class LowPowerEnable {
-    //% block="prevent"
+    //% block="verhindern"
     Prevent,
-    //% block="allow"
+    //% block="erlauben"
     Allow
 };
 
@@ -64,7 +64,7 @@ void lowPowerRequest(LowPowerMode mode = LowPowerMode::Continue);
 //% help=power/low-power-request
 //% group="micro:bit (V2)"
 //% weight=700
-//% block="request low power||and $mode"
+//% block="niedrigen Verbauch anfordern||und $mode"
 //%
 void lowPowerRequest(LowPowerMode mode) {
 #if MICROBIT_CODAL
@@ -86,7 +86,7 @@ void lowPowerRequest(LowPowerMode mode) {
 //% group="micro:bit (V2)"
 //% weight=600
 //% interval.shadow=longTimePicker
-//% block="request low power for $interval ms"
+//% block="niedrigen Verbauch für $interval ms anfordern"
 //%
 void lowPowerPause(int interval) {
 #if MICROBIT_CODAL
@@ -104,7 +104,7 @@ void lowPowerPause(int interval) {
 */
 //% help=power/low-power-enable
 //% weight=500
-//% block="low power %enable"
+//% block="niedrigen Verbrauch %enable"
 //%
 void lowPowerEnable(LowPowerEnable enable) {
 #if MICROBIT_CODAL
@@ -150,7 +150,7 @@ bool lowPowerIsEnabled() {
 //% blockAllowMultiple=1
 //% interval.shadow=longTimePicker
 //% afterOnStart=true
-//% block="full power every $interval ms"
+//% block="vollen Verbrauch alle $interval ms"
 //%
 void fullPowerEvery(int interval, Action code) {
 #if MICROBIT_CODAL
@@ -240,7 +240,7 @@ bool fullPowerSourceIsEnabled(FullPowerSource source) {
 //% help=power/full-power-on
 //% group="micro:bit (V2)"
 //% weight=900
-//% block="full power on %source"
+//% block="vollen Verbrauch mit %source aktivieren"
 //%
 void fullPowerOn(FullPowerSource source) {
   fullPowerSourceEnable(source, true);
