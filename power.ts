@@ -58,7 +58,7 @@ export function lowPowerRequest(mode?: LowPowerMode): void {
     * @param interval The period of time to pause, in milliseconds.
     */
 //% help=power/low-power-for
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=600
 //% interval.shadow=longTimePicker
 //% block="niedrigen Verbauch für $interval ms anfordern"
@@ -97,7 +97,7 @@ export function lowPowerIsEnabled(): boolean {
     * @param code the code to execute
     */
 //% help=power/full-power-every
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=800
 //% blockAllowMultiple=1
 //% interval.shadow=longTimePicker
@@ -136,7 +136,7 @@ export function fullPowerSourceIsEnabled(source: FullPowerSource): boolean {
     * @param source the source to set
     */
 //% help=power/full-power-on
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=900
 //% block="vollen Verbrauch mit %source aktivieren"
 //% parts="v2"
