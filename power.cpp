@@ -62,7 +62,7 @@ void lowPowerRequest(LowPowerMode mode = LowPowerMode::Continue);
   * @param mode If Continue, then return immediately; if Wait, then pause until a power-up event occurs 
   */
 //% help=power/low-power-request
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=700
 //% block="niedrigen Verbauch anfordern||und $mode"
 //%
@@ -83,7 +83,7 @@ void lowPowerRequest(LowPowerMode mode) {
   * @param interval The period of time to pause, in milliseconds.
   */
 //% help=power/low-power-for
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=600
 //% interval.shadow=longTimePicker
 //% block="niedrigen Verbauch für $interval ms anfordern"
@@ -145,7 +145,7 @@ bool lowPowerIsEnabled() {
   * @param code the code to execute
   */
 //% help=power/full-power-every
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=800
 //% blockAllowMultiple=1
 //% interval.shadow=longTimePicker
@@ -238,7 +238,7 @@ bool fullPowerSourceIsEnabled(FullPowerSource source) {
   * @param source the source to set
   */
 //% help=power/full-power-on
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=900
 //% block="vollen Verbrauch mit %source aktivieren"
 //%
