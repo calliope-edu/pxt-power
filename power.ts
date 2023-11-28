@@ -44,7 +44,7 @@ namespace power {
     * @param mode If Continue, then return immediately; if Wait, then pause until a power-up event occurs 
     */
 //% help=power/low-power-request
-//% group="micro:bit (V2)"
+//% group="Energieverbrauch"
 //% weight=700
 //% block="niedrigen Verbauch anfordern||und $mode"
 //% parts="v2"
