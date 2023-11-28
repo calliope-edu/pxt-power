@@ -102,7 +102,7 @@ export function lowPowerIsEnabled(): boolean {
 //% blockAllowMultiple=1
 //% interval.shadow=longTimePicker
 //% afterOnStart=true
-//% block="vollen Verbrauch alle $interval ms"
+//% block="normalen Verbrauch alle $interval ms"
 //% parts="v2"
 //% shim=power::fullPowerEvery
 export function fullPowerEvery(interval: number, code: () => void): void {
@@ -138,7 +138,7 @@ export function fullPowerSourceIsEnabled(source: FullPowerSource): boolean {
 //% help=power/full-power-on
 //% group="Energieverbrauch"
 //% weight=900
-//% block="vollen Verbrauch mit %source aktivieren"
+//% block="normalen Verbrauch mit %source aktivieren"
 //% parts="v2"
 //% shim=power::fullPowerOn
 export function fullPowerOn(source: FullPowerSource): void {

@@ -150,7 +150,7 @@ bool lowPowerIsEnabled() {
 //% blockAllowMultiple=1
 //% interval.shadow=longTimePicker
 //% afterOnStart=true
-//% block="vollen Verbrauch alle $interval ms"
+//% block="normalen Verbrauch alle $interval ms"
 //%
 void fullPowerEvery(int interval, Action code) {
 #if MICROBIT_CODAL
@@ -240,7 +240,7 @@ bool fullPowerSourceIsEnabled(FullPowerSource source) {
 //% help=power/full-power-on
 //% group="Energieverbrauch"
 //% weight=900
-//% block="vollen Verbrauch mit %source aktivieren"
+//% block="normalen Verbrauch mit %source aktivieren"
 //%
 void fullPowerOn(FullPowerSource source) {
   fullPowerSourceEnable(source, true);
