@@ -46,7 +46,7 @@ namespace power {
 //% help=power/low-power-request
 //% group="Energieverbrauch"
 //% weight=700
-//% block="niedrigen Verbauch anfordern||und $mode"
+//% block="niedrigen Verbrauch anfordern||und $mode"
 //% parts="v2"
 //% shim=power::lowPowerRequest
 export function lowPowerRequest(mode?: LowPowerMode): void {
@@ -61,7 +61,7 @@ export function lowPowerRequest(mode?: LowPowerMode): void {
 //% group="Energieverbrauch"
 //% weight=600
 //% interval.shadow=longTimePicker
-//% block="niedrigen Verbauch für $interval ms anfordern"
+//% block="niedrigen Verbrauch für $interval ms anfordern"
 //% parts="v2"
 //% shim=power::lowPowerPause
 export function lowPowerPause(interval: number): void {
